@@ -4,7 +4,7 @@ function generatePassword () {
 
 // created character arrays to generate random passwords
 var uppercaseCharacters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y"];
-var lowercseCharacters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var lowercaseCharacters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var numberCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 var specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+']
 
@@ -19,6 +19,7 @@ uppercaseCharacters [1]
   var lowercase = confirm ('Include lowercase letters?');
   var characters = confirm ('Include special characters?');
 
+  // conditions of the arrays
   if (numbers){
     resultArray = resultArray.concat(numberCharacters);
   
@@ -55,5 +56,5 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// starts the password generation process
 generateBtn.addEventListener("click", writePassword);
